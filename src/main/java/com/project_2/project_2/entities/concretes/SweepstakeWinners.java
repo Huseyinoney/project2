@@ -1,10 +1,6 @@
 package com.project_2.project_2.entities.concretes;
 
 import javax.persistence.Column;
-
-
-
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -15,27 +11,23 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Getter
 @Setter
-@Table(name="users")
-public class Users {
+@Table(name="sweeepstakewinners")
+public class SweepstakeWinners {
 
 	@Id
 	@Column(name="id")
 	private int id;
 	
-	@Column(name="username")
-	private String userName;
+	@Column(name="users_id")
+	private int usersId;
 	
-	@Column(name="discord_id")
-	private String discordId;
-	
-	@Column(name="password")
-	private String password;
-	
+	@Column(name="comments")
+	private String comments;
+		
 }
